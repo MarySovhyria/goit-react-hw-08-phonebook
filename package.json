@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://MarySovhyria.github.io/goit-react-hw-08-phonebook/",
   "dependencies": {
+    "@react-spring/web": "^9.7.3",
     "@redux-devtools/extension": "^3.2.5",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.6.3",
     "axios": "^1.4.0",
+    "easing-coordinates": "^2.0.2",
     "eslint-plugin-react-hooks": "^5.0.0-canary-1cea38448-20230530",
     "formik": "^2.4.2",
     "notiflix": "^3.2.6",
