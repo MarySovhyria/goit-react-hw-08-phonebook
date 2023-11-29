@@ -23,8 +23,8 @@ function App() {
     dispatch(refreshUser());
   }, [dispatch]);
 
-  return isRefreshing ? ( // if isRefreshing is true, then render Loader, else render Container
-    <Loader /> // Loader - spinner
+  return isRefreshing ? ( 
+    <Loader /> 
   ) : (
     <Container>
       <Routes>
