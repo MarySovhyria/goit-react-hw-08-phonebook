@@ -60,11 +60,11 @@ const RegisterForm = () => {
         rules={[
           {
             type: 'email',
-            message: 'The input is not valid E-mail!',
+            message: 'Email is not valid',
           },
           {
             required: true,
-            message: 'Please input your E-mail!',
+            message: 'This field is required',
           },
         ]}
       >
@@ -77,7 +77,7 @@ const RegisterForm = () => {
         rules={[
           {
             required: true,
-            message: 'Please input your password!',
+            message: 'This field is required',
           },
         ]}
         hasFeedback
@@ -93,7 +93,7 @@ const RegisterForm = () => {
         rules={[
           {
             required: true,
-            message: 'Please confirm your password!',
+            message: 'Confirm your password',
           },
           ({ getFieldValue }) => ({
             validator(_, value) {
@@ -101,7 +101,7 @@ const RegisterForm = () => {
                 return Promise.resolve();
               }
               return Promise.reject(
-                new Error('The new password that you entered do not match!')
+                new Error('Paswords are not matching')
               );
             },
           }),
@@ -117,7 +117,7 @@ const RegisterForm = () => {
         rules={[
           {
             required: true,
-            message: 'Please input your name!',
+            message: 'This field is required',
             whitespace: true,
           },
         ]}

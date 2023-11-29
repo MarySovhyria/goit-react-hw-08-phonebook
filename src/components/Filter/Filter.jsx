@@ -18,7 +18,7 @@ function Filter() {
     <InputStyles
       type="text"
       name="filter"
-      placeholder="Search by name"
+      placeholder="Search"
       value={filter}
       onChange={handleFilterChange}
       prefix={<FcSearch />}

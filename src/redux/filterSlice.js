@@ -7,6 +7,7 @@ const filterSlice = createSlice({
     setFilter: (_state, action) => {
       return action.payload;
     },
+    
   },
 });
 

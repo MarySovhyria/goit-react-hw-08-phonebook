@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/operations';
 import Notiflix from 'notiflix';
 import { selectContacts } from 'redux/selectors';
-import { ReactComponent as AddIcon } from '../icons/plus-user.svg';
 import { Form, Input, Text, Button } from './ContactForm.styled';
 
 const ContactForm = () => {
@@ -69,8 +68,6 @@ const ContactForm = () => {
         placeholder="Enter name"
         value={name}
         onChange={handleNameChange}
-        pattern="^[a-zA-Zа-яА-Я]+([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*$"
-        title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
         required
       />
 
@@ -81,13 +78,11 @@ const ContactForm = () => {
         placeholder="Enter phone number"
         value={number}
         onChange={handleNumberChange}
-        pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
-        title="Phone number format could be: +1 555 1234567 or 555 1234567."
         required
       />
 
       <Button type="submit">
-        <AddIcon />
+        Add number
       </Button>
     </Form>
   );

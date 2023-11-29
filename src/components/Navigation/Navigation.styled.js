@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-export const Links = styled(NavLink)`
+export const Link = styled(NavLink)`
   display: inline-block;
   text-decoration: none;
   padding: 8px 16px;
@@ -11,7 +11,8 @@ export const Links = styled(NavLink)`
   color: black;
 
   &.active {
-    color: #fff;
-    background-color: #1677ff;
+      background-color: #29AB87;
+    color: white;
+    border: 0px;
   }
 `;

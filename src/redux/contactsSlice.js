@@ -69,6 +69,7 @@ const contactsSlice = createSlice({
         state.items = state.items.map(item =>
           item.id === updatedContact.id ? updatedContact : item
         );
+        
       });
   },
 });

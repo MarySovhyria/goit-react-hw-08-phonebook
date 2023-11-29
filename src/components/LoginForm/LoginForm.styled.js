@@ -22,8 +22,12 @@ export const Button = styled.button`
   font-size: 14px;
   border-radius: 6px;
   border: 1px solid;
+  background-color: #49796B;
+  color: white;
   :hover {
-    background-color: #e0e0e0;
+    background-color: #29AB87;
+    color: black;
+    border: 0px;
   }
 `;
 

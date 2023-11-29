@@ -9,5 +9,5 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  margin-top: 20px;
+  margin-top: 25px;
 `;

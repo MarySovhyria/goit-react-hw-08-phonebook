@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { deleteContact, editContatc } from 'redux/operations';
-import { Modal, Input, Button, message, Popconfirm } from 'antd';
-import { ReactComponent as AddIcon } from '../icons/minus-user.svg';
-import { ReactComponent as EditIcon } from '../icons/edit-profile.svg';
+import { Modal, Input, Button, Popconfirm } from 'antd';
 import {
   ContactItems,
   ContactName,
@@ -21,11 +19,9 @@ function ContactItem({ contact }) {
 
   const confirm = e => {
     handleDelete(e.target.value);
-    message.success('Click on Yes');
   };
   const cancel = e => {
     console.log(e);
-    message.error('Click on No');
   };
 
   const handleDelete = () => {
@@ -60,18 +56,18 @@ function ContactItem({ contact }) {
         {contact.number}
       </ContactNumber>
       <BtnEdit onClick={handleEdit}>
-        <EditIcon />
+       Edit
       </BtnEdit>
       <Popconfirm
         title="Delete the contact"
-        description="Are you sure to delete this contact?"
+        description="This contacts will be deleted permanently. Are tou sure youy want to delete it?"
         onConfirm={confirm}
         onCancel={cancel}
         okText="Yes"
         cancelText="No"
       >
         <Btn danger>
-          <AddIcon />
+          Delete
         </Btn>
       </Popconfirm>
 
@@ -93,8 +89,6 @@ function ContactItem({ contact }) {
             type="text"
             value={newName}
             onChange={handleNameChange}
-            pattern="^[a-zA-Zа-яА-Я]+([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*$"
-            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
           />
           <label>New Number:</label>
@@ -102,8 +96,6 @@ function ContactItem({ contact }) {
             type="text"
             value={newNumber}
             onChange={handleNumberChange}
-            pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
-            title="Phone number format could be: +1 555 1234567 or 555 1234567."
             required
           />
         </div>

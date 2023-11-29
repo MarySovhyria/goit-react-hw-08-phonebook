@@ -55,7 +55,6 @@ function App() {
             }
           />
           <Route path="*" element={<Navigate to="/" />} />{' '}
-          {/* redirect to home page */}
         </Route>
       </Routes>
     </Container>

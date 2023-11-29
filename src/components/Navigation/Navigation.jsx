@@ -1,15 +1,15 @@
 import { useAuth } from '../hooks';
-import { Links } from './Navigation.styled';
+import { Link } from './Navigation.styled';
 
 const Navigation = () => {
   const { isLoggedIn } = useAuth();
 
   return (
     <nav>
-      <Links to="/" end>
+      <Link to="/" end>
         Home
-      </Links>
-      {isLoggedIn && <Links to="/contacts">Phonebook</Links>}
+      </Link>
+      {isLoggedIn && <Link to="/contacts">Phonebook</Link>}
     </nav>
   );
 };

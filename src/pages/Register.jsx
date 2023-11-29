@@ -13,4 +13,5 @@ export default function Register() {
       </div>
     </HelmetProvider>
   );
+  
 }

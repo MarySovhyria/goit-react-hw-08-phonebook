@@ -23,7 +23,7 @@ function ContactList() {
 
   return (
     <ul>
-      {isLoading && !error ? (
+      {isLoading && !error ?(
         <Loader />
       ) : filteredContacts.length === 0 && !error ? (
         <Empty />

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-export const Links = styled(NavLink)`
+export const Link = styled(NavLink)`
   @media only screen and (max-width: 600px) {
     justify-content: space-around;
   }
@@ -15,6 +15,6 @@ export const Links = styled(NavLink)`
 
   &.active {
     color: #fff;
-    background-color: #1677ff;
+    background-color: #ACE1AF;
   }
 `;

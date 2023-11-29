@@ -26,39 +26,31 @@ export const Btn = styled.button`
   @media only screen and (max-width: 600px) {
     margin-right: 10px;
   }
-  > svg {
-    width: 30px;
-    height: 22px;
-    fill: #f50505;
-  }
   padding: 3px 10px 0 10px;
   margin-left: 5px;
   font-size: 14px;
   border-radius: 6px;
   border: 1px solid;
+   background-color: #49796B;
+  color: white;
   :hover {
-    background-color: #1677ff;
-    > svg {
-      fill: #fff;
-    }
+    background-color: #29AB87;
+    color: black;
+    border: 0px;
   }
 `;
 
 export const BtnEdit = styled.button`
-  > svg {
-    width: 30px;
-    height: 22px;
-    fill: #051df5;
-  }
   padding: 3px 10px 0 10px;
   margin-left: 20px;
   font-size: 14px;
   border-radius: 6px;
   border: 1px solid;
+  background-color: #49796B;
+  color: white;
   :hover {
-    background-color: #1677ff;
-    > svg {
-      fill: #fff;
-    }
+    background-color: #29AB87;
+    color: black;
+    border: 0px;
   }
 `;

@@ -1,10 +1,10 @@
-import { Links } from './AuthNav.styled';
+import { Link } from './AuthNav.styled';
 
 export default function AuthNav() {
   return (
     <div>
-      <Links to="/registration">Registration</Links>
-      <Links to="/login">Login</Links>
+      <Link to="/registration">Registration</Link>
+      <Link to="/login">Login</Link>
     </div>
   );
 }

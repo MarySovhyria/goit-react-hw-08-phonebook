@@ -18,19 +18,15 @@ export const Button = styled.button`
   @media only screen and (max-width: 600px) {
     margin-right: 20px;
   }
-  > svg {
-    width: 30px;
-    height: 22px;
-    fill: #de7709;
-  }
   padding: 3px 10px 0 10px;
   font-size: 14px;
   border-radius: 6px;
   border: 1px solid;
+    background-color: #49796B;
+  color: white;
   :hover {
-    background-color: #1677ff;
-    > svg {
-      fill: #fff;
-    }
+   background-color: #29AB87;
+    color: black;
+    border: 0px;
   }
 `;

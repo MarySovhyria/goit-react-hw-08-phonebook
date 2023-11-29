@@ -14,7 +14,7 @@ export const Layout = () => {
       <Toaster
         position="top-center"
         toastOptions={{
-          duration: 4000,
+          duration: 3500,
         }}
       />
     </>

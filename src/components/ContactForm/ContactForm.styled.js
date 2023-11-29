@@ -11,27 +11,23 @@ export const Input = styled.input`
   margin-bottom: 10px;
   border-radius: 6px;
   border: none;
+  width: 300px;
   outline: 0;
   background-color: #fff;
   box-shadow: 0 1px 6px 0 #20212447;
 `;
 
 export const Button = styled.button`
-  > svg {
-    width: 40px;
-    height: 30px;
-    fill: #02ba52;
-  }
-  /* padding: 10px 20px; */
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 6px;
   border: 1px solid;
+  background-color: #49796B;
+  color: white;
   :hover {
-    background-color: #1677ff;
-    > svg {
-      fill: #fff;
-    }
+    background-color: #29AB87;
+    color: black;
+    border: 0px;
   }
 `;
 
